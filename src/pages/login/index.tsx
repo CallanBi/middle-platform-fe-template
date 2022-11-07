@@ -55,28 +55,25 @@ const LoginForm: FC = () => {
               transform: 'translate(0%, 30%) scale(0.7)',
             }}
           />
-          <span className={styles.title}>Sorame 天目</span>
-        </div>
-        <div className={styles.desc}>
-          Sorame 天目 BI（Business Intelligent）系统
+          <span className={styles.title}>AIGLE</span>
         </div>
       </div>
       <div className={styles.main}>
         <Form<LoginParams> onFinish={onFinished} initialValues={initialValues}>
           <Form.Item
             name="username"
-            rules={[{ required: true, message: '请输入用户名！' }]}
+            rules={[{ required: true, message: 'User name required' }]}
           >
-            <Input size="large" placeholder="用户名" />
+            <Input size="large" placeholder="User Name" />
           </Form.Item>
           <Form.Item
             name="password"
-            rules={[{ required: true, message: '请输入密码！' }]}
+            rules={[{ required: true, message: 'Password required' }]}
           >
-            <Input type="password" size="large" placeholder="密码" />
+            <Input type="password" size="large" placeholder="Password" />
           </Form.Item>
           <Form.Item name="remember" valuePropName="checked">
-            <Checkbox>记住用户</Checkbox>
+            <Checkbox> Remember Me</Checkbox>
           </Form.Item>
           <Form.Item>
             <Button
@@ -85,7 +82,7 @@ const LoginForm: FC = () => {
               htmlType="submit"
               type="primary"
             >
-              登录
+              Log in
             </Button>
           </Form.Item>
         </Form>

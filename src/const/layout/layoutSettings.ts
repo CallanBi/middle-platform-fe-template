@@ -8,11 +8,10 @@ const layoutSettings: Partial<ProSettings> = {
   navTheme: 'light',
   layout: 'side',
   contentWidth: 'Fluid',
-  headerHeight: parseInt(`${MEASUREMENT.SORAME_HEADER_HEIGHT}`),
-  primaryColor: COLOR_PALETTE.SORAME_BLUE,
+  headerHeight: parseInt(`${MEASUREMENT.AIGLE_HEADER_HEIGHT}`),
+  primaryColor: COLOR_PALETTE.AIGLE_BLUE,
   splitMenus: false,
   fixedHeader: false,
-  // title: 'Sorame 天目',
 };
 
 const globalMessageConfig: ConfigOptions = {

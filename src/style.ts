@@ -7,13 +7,13 @@ const globalStyles = css`
     font-size: 14px;
   }
   ::-webkit-scrollbar {
-    background-color: ${COLOR_PALETTE.SORAME_HEADER_SEARCH_BG}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_HEADER_SEARCH_BG}!important;
     border-radius: 10px;
     width: 8px;
     height: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: ${COLOR_PALETTE.SORAME_HEADER_SEARCH_BG_HOVER}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_HEADER_SEARCH_BG_HOVER}!important;
     border-radius: 10px;
     width: 8px;
     height: 8px;
@@ -24,41 +24,41 @@ const globalStyles = css`
   }
 
   .ant-layout-sider {
-    background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
 
     .ant-pro-sider-logo {
       h1 {
-        color: ${COLOR_PALETTE.SORAME_BLACK}!important;
+        color: ${COLOR_PALETTE.AIGLE_BLACK}!important;
       }
     }
   }
 
   .ant-table-cell {
-    background-color: ${COLOR_PALETTE.SORAME_WHITE}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_WHITE}!important;
     :hover {
-      background-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}!important;
     }
   }
 
   .ant-layout-sider-light {
-    background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
   }
 
   .ant-checkbox {
     .ant-checkbox-inner {
-      background-color: ${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}!important;
     }
   }
 
   .ant-checkbox-checked {
     .ant-checkbox-inner {
-      background-color: ${COLOR_PALETTE.SORAME_BLUE}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_BLUE}!important;
     }
   }
 
   .ant-select-focused {
     .ant-select-selector {
-      border-color: ${COLOR_PALETTE.SORAME_BLUE}!important;
+      border-color: ${COLOR_PALETTE.AIGLE_BLUE}!important;
       box-shadow: none !important;
     }
   }
@@ -70,21 +70,21 @@ const globalStyles = css`
   }
 
   table {
-    border-color: ${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}!important;
+    border-color: ${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}!important;
   }
   th {
-    background-color: ${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}!important;
   }
   hr {
-    color: ${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}!important;
+    color: ${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}!important;
   }
 
   .ant-layout {
-    background-color: ${COLOR_PALETTE.SORAME_WHITE};
+    background-color: ${COLOR_PALETTE.AIGLE_WHITE};
     .ant-layout-header .ant-pro-header-light {
       height: 48px !important;
       line-height: 48px !important;
-      background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
     }
   }
 
@@ -92,29 +92,29 @@ const globalStyles = css`
     .ant-layout-header .ant-pro-header-light {
       height: 48px !important;
       line-height: 48px !important;
-      background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
     }
   }
   .ant-pro-basicLayout .ant-layout-header.ant-pro-header-light {
-    background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
   }
 
   .ant-layout-header {
-    background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+    background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
     .ant-pro-global-header {
-      background-color: ${COLOR_PALETTE.SORAME_GREY}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_GREY}!important;
     }
   }
 
   .ant-input {
     :hover {
-      border-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG};
-      background-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG};
+      border-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG};
+      background-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG};
     }
     :focus {
-      border-color: ${COLOR_PALETTE.SORAME_BLUE};
+      border-color: ${COLOR_PALETTE.AIGLE_BLUE};
       box-shadow: none;
-      background-color: ${COLOR_PALETTE.SORAME_INPUT_BACKGROUND};
+      background-color: ${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND};
     }
   }
 
@@ -141,38 +141,38 @@ const globalStyles = css`
 
   .ant-input-password {
     :hover {
-      background-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}!important;
       input {
-        background-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}!important;
+        background-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}!important;
       }
     }
     :focus {
-      border-color: ${COLOR_PALETTE.SORAME_BLUE};
+      border-color: ${COLOR_PALETTE.AIGLE_BLUE};
       box-shadow: none;
     }
     :active {
-      border-color: ${COLOR_PALETTE.SORAME_BLUE};
+      border-color: ${COLOR_PALETTE.AIGLE_BLUE};
       box-shadow: none;
     }
   }
   .ant-input-affix-wrapper-focused {
-    border-color: ${COLOR_PALETTE.SORAME_BLUE}!important;
+    border-color: ${COLOR_PALETTE.AIGLE_BLUE}!important;
     box-shadow: none !important;
   }
 
   .ant-input-affix-wrapper {
     :hover {
-      background-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}!important;
+      background-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}!important;
       input {
-        background-color: ${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}!important;
+        background-color: ${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}!important;
       }
     }
     :focus {
-      border-color: ${COLOR_PALETTE.SORAME_BLUE};
+      border-color: ${COLOR_PALETTE.AIGLE_BLUE};
       box-shadow: none;
     }
     :active {
-      border-color: ${COLOR_PALETTE.SORAME_BLUE};
+      border-color: ${COLOR_PALETTE.AIGLE_BLUE};
       box-shadow: none;
     }
   }

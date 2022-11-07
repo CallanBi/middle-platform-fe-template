@@ -36,7 +36,7 @@ class ErrorBoundary extends React.Component<
     if (this.state.hasError) {
       return (
         <ErrorIllustrator
-          desc={`错误信息：${this.state.error?.message ?? ''}`}
+          desc={`error message: ${this.state.error?.message ?? ''}`}
         />
       );
     }

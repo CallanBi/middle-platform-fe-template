@@ -19,7 +19,7 @@ import ErrorBoundary from '@/components/errorBoundary';
 const menuList = [
   {
     path: '/overview',
-    name: '概览',
+    name: 'Overview',
     locale: 'menu.overview',
     icon: 'heart',
   },
@@ -92,7 +92,9 @@ const LayoutPage: FC = ({ children }) => {
       logo={() => (
         <LogoTitleSvg
           style={{
-            transform: 'translate(-23%, 0%) scale(0.55)',
+            transform: collapsed
+              ? 'translate(-23%, 0%) scale(0.55)'
+              : 'translate(-18%, 0%) scale(0.55)',
           }}
         />
       )}

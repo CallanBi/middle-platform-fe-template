@@ -32,6 +32,61 @@ export default ({ command }: { command: string }) => {
           find: /@\//,
           replacement: pathResolve('src') + '/',
         },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@api\//,
+          replacement: pathResolve('src') + '/api/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@assets\//,
+          replacement: pathResolve('src') + '/assets/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@components\//,
+          replacement: pathResolve('src') + '/components/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@config\//,
+          replacement: pathResolve('src') + '/config/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@const\//,
+          replacement: pathResolve('src') + '/const/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@locales\//,
+          replacement: pathResolve('src') + '/locales/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@pages\//,
+          replacement: pathResolve('src') + '/pages/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@routes\//,
+          replacement: pathResolve('src') + '/routes/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@stores\//,
+          replacement: pathResolve('src') + '/stores/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@styles\//,
+          replacement: pathResolve('src') + '/styles/',
+        },
+        {
+          // /@/xxxx  =>  src/xxx
+          find: /@types\//,
+          replacement: pathResolve('src') + '/types/',
+        },
       ],
     },
     optimizeDeps: {
@@ -88,46 +143,65 @@ export default ({ command }: { command: string }) => {
             /** theme Customization
              * https://ant.design/docs/react/customize-theme
              */
-            'primary-color': `${COLOR_PALETTE.SORAME_BLUE}`,
-            'link-color': `${COLOR_PALETTE.SORAME_LIGHT_BLACK}`,
-            'component-background': `${COLOR_PALETTE.SORAME_WHITE}`,
-            'primary-color-hover': `${COLOR_PALETTE.SORAME_LIGHT_BLUE}`,
-            'border-radius-base': `${MEASUREMENT.SORAME_BORDER_RADIUS_BASE}`,
-            'border-color-base': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'border-color-split': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'background-color-base': `${COLOR_PALETTE.SORAME_WHITE}`,
-            'item-hover-bg': `${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}`,
-            // 'primary-1': `${COLOR_PALETTE.SORAME_LIGHT_BLUE}`,
+            'primary-color': `${COLOR_PALETTE.AIGLE_BLUE}`,
+            'link-color': `${COLOR_PALETTE.AIGLE_LIGHT_BLACK}`,
+            'component-background': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'primary-color-hover': `${COLOR_PALETTE.AIGLE_LIGHT_BLUE}`,
+            'border-radius-base': `${MEASUREMENT.AIGLE_BORDER_RADIUS_BASE}`,
+            'border-color-base': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'border-color-split': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'background-color-base': `${COLOR_PALETTE.AIGLE_WHITE}`,
+            'item-hover-bg': `${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}`,
+            // 'primary-1': `${COLOR_PALETTE.AIGLE_LIGHT_BLUE}`,
 
             /** Layout */
 
             /** Tips color */
-            'success-color': `${COLOR_PALETTE.SORAME_GREEN}`,
-            'warning-color': `${COLOR_PALETTE.SORAME_YELLOW}`,
-            'error-color': `${COLOR_PALETTE.SORAME_RED}`,
+            'success-color': `${COLOR_PALETTE.AIGLE_GREEN}`,
+            'warning-color': `${COLOR_PALETTE.AIGLE_YELLOW}`,
+            'error-color': `${COLOR_PALETTE.AIGLE_RED}`,
 
             /** Input */
-            'input-bg': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'input-placeholder-color': `${COLOR_PALETTE.SORAME_INPUT_PLACEHOLDER_COLOR}`,
-            'input-border-color': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'input-hover-border-color': `${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}`,
+            'input-bg': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'input-placeholder-color': `${COLOR_PALETTE.AIGLE_INPUT_PLACEHOLDER_COLOR}`,
+            'input-border-color': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'input-hover-border-color': `${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}`,
 
             /** Table */
-            'table-bg': `${COLOR_PALETTE.SORAME_WHITE}`,
-            'table-header-bg': `${COLOR_PALETTE.SORAME_WHITE}`,
-            'table-row-hover-bg': `${COLOR_PALETTE.SORAME_INPUT_HOVER_BG}`,
-            'table-border-color': `${COLOR_PALETTE.SORAME_WHITE}`,
-            'table-header-cell-split-color': `${COLOR_PALETTE.SORAME_WHITE}`,
+            'table-bg': `${COLOR_PALETTE.AIGLE_WHITE}`,
+            'table-header-bg': `${COLOR_PALETTE.AIGLE_WHITE}`,
+            'table-row-hover-bg': `${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}`,
+            'table-border-color': `${COLOR_PALETTE.AIGLE_WHITE}`,
+            'table-header-cell-split-color': `${COLOR_PALETTE.AIGLE_WHITE}`,
 
             /** Select */
-            'select-background': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'select-item-selected-color': `${COLOR_PALETTE.SORAME_BLUE}`,
+            'select-background': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'select-item-selected-color': `${COLOR_PALETTE.AIGLE_BLUE}`,
 
             /** Pagination */
-            'pagination-item-bg': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'pagination-item-bg-active': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'pagination-item-input-bg': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
-            'pagination-item-link-bg': `${COLOR_PALETTE.SORAME_INPUT_BACKGROUND}`,
+            'pagination-item-bg': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'pagination-item-bg-active': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'pagination-item-input-bg': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'pagination-item-link-bg': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+
+            /** Tree */
+            'tree-directory-selected-color': `${COLOR_PALETTE.AIGLE_BLACK}`,
+            'tree-directory-selected-bg': `${COLOR_PALETTE.AIGLE_MENU_SELECTED_BG}`,
+            'tree-node-hover-bg': `${COLOR_PALETTE.AIGLE_INPUT_HOVER_BG}`,
+            'tree-node-selected-bg': `${COLOR_PALETTE.AIGLE_MENU_SELECTED_BG}`,
+            'tree-child-padding': `${MEASUREMENT.AIGLE_TREE_CHILD_PADDING}`,
+
+            /** Card */
+            'card-skeleton-bg': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+            'card-radius': `${MEASUREMENT.AIGLE_CARD_RADIUS}`,
+
+            /** Modal */
+            'modal-border-radius': `${MEASUREMENT.AIGLE_MODAL_BORDER_RADIUS}`,
+
+            /** Button */
+            'btn-default-bg': `${COLOR_PALETTE.AIGLE_INPUT_BACKGROUND}`,
+
+            /** semi vars */
           },
         },
       },

@@ -37,7 +37,7 @@ const GlobalHeaderRight: React.FC = () => {
   }
   return (
     <Space className={className}>
-      <HeaderDropdown
+      {/* <HeaderDropdown
         className={classes.action}
         overlay={
           <Menu>
@@ -46,7 +46,7 @@ const GlobalHeaderRight: React.FC = () => {
                 window.open('/~docs');
               }}
             >
-              文档
+              Docs
             </Menu.Item>
           </Menu>
         }
@@ -55,12 +55,12 @@ const GlobalHeaderRight: React.FC = () => {
           <IconHelpCircle
             size="extra-large"
             style={{
-              color: COLOR_PALETTE.SORAME_HEADER_SEARCH_BG_HOVER,
+              color: COLOR_PALETTE.AIGLE_HEADER_SEARCH_BG_HOVER,
             }}
           />
         </span>
       </HeaderDropdown>
-      <SelectLang className={classes.action} />
+      <SelectLang className={classes.action} /> */}
       <Avatar />
     </Space>
   );

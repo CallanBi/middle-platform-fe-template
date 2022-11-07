@@ -36,7 +36,7 @@ const DescSection = styled.section`
 `;
 
 const Empty: React.FC<EmptyProps> = (props: EmptyProps) => {
-  const { title = '没有数据', desc = '' } = props;
+  const { title = 'No Data', desc = '' } = props;
 
   return (
     <IllustrationWrapperSection>

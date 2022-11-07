@@ -24,7 +24,7 @@ interface AnyInterface {
 type AnyProps = Record<string, unknown> | AnyInterface;
 
 const axios = Axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL + '',
+  baseURL: '/api',
   timeout: 1000,
   headers: {
     'Content-Type': 'application/json',
@@ -70,9 +70,9 @@ axios.interceptors.response.use(
         // 404 request not found
         case 404:
           message.error(
-            `请求资源不存在${
+            `Resource not found${
               error?.response?.data?.error
-                ? `，错误信息：${error?.response?.data?.error}`
+                ? `，error message：${error?.response?.data?.error}`
                 : ''
             }`
           );

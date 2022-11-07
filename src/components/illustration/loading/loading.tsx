@@ -28,8 +28,8 @@ const LoadingSection = styled.section`
   animation-fill-mode: both;
   width: 40px;
   height: 40px;
-  border-radius: ${MEASUREMENT.SORAME_BORDER_RADIUS_BASE};
-  background: ${COLOR_PALETTE.SORAME_BLUE};
+  border-radius: ${MEASUREMENT.AIGLE_BORDER_RADIUS_BASE};
+  background: ${COLOR_PALETTE.AIGLE_BLUE};
   animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
 `;
 

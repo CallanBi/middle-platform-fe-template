@@ -1,5 +1,5 @@
 {
-  "name": "sorame-fe",
+  "name": "aigle-fe",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --port 4000",

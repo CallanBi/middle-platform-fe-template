@@ -7,12 +7,12 @@ const Settings: LayoutSettings & {
 } = {
   navTheme: 'light',
   // 拂晓蓝
-  primaryColor: COLOR_PALETTE.SORAME_BLUE,
+  primaryColor: COLOR_PALETTE.AIGLE_BLUE,
   layout: 'mix',
   contentWidth: 'Fluid',
   fixedHeader: false,
   fixSiderbar: true,
-  title: 'Sorame',
+  title: 'Aigle',
   colorWeak: false,
   pwa: false,
   iconfontUrl: '',

@@ -16,7 +16,9 @@ const overviewPage: FC = () => {
       });
     },
     onError: (err: API.ErrorResp) => {
-      message.error(`未找到数据源，错误信息：${err?.response?.data?.error}`);
+      message.error(
+        `Data source not found. Error message:${err?.response?.data?.error}`
+      );
       setGetDataSourceReqParams({
         ...getDataSourceReqParams,
         enableRequest: false,
@@ -46,9 +48,13 @@ const overviewPage: FC = () => {
           <Loading></Loading>
         </section>
       )}
-      {isSuccess && <div>{`数据源接口：${JSON.stringify(data)}`}</div>}
+      {isSuccess && (
+        <div>{`data source interface: ${JSON.stringify(data)}`}</div>
+      )}
       {isError && (
-        <ErrorIllustrator desc={`错误信息：${error?.response?.data?.error}`} />
+        <ErrorIllustrator
+          desc={`Error message: ${error?.response?.data?.error}`}
+        />
       )}
     </div>
   );

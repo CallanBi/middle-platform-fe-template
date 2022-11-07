@@ -1,3 +1,4 @@
+import 'antd/dist/antd.less';
 import React, { Suspense, useMemo } from 'react';
 import ReactDOM from 'react-dom';
 import { QueryCache, QueryClient, QueryClientProvider } from 'react-query';
@@ -5,7 +6,7 @@ import { RecoilRoot } from 'recoil';
 import axios, { AxiosContext } from './api/request';
 
 import './index.css';
-import App from './App';
+import App from './app';
 import SuspendFallbackLoading from './components/illustration/loading';
 import { Global } from '@emotion/react';
 import globalStyles from './style';

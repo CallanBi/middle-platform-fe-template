@@ -64,7 +64,7 @@ const SelectLang: React.FC<SelectLangProps> = props => {
         <IconLanguage
           size="large"
           style={{
-            color: COLOR_PALETTE.SORAME_HEADER_SEARCH_BG_HOVER,
+            color: COLOR_PALETTE.AIGLE_HEADER_SEARCH_BG_HOVER,
           }}
         ></IconLanguage>
       </span>

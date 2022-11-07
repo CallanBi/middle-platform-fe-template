@@ -38,7 +38,7 @@ const DescSection = styled.section`
 `;
 
 const ErrorIllustrator: React.FC<EmptyProps> = (props: EmptyProps) => {
-  const { title = '哎呀，出错了', desc = '' } = props;
+  const { title = 'Something went wrong', desc = '' } = props;
 
   return (
     <IllustrationWrapperSection>

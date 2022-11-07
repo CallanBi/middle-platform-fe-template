@@ -36,7 +36,7 @@ const DescSection = styled.section`
 `;
 
 const Locked: React.FC<LockedProps> = (props: LockedProps) => {
-  const { title = '该题目是 Plus 会员专享题', desc = '' } = props;
+  const { title = 'Locked', desc = '' } = props;
 
   return (
     <IllustrationWrapperSection>
